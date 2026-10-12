@@ -1,8 +1,9 @@
 :root {
-  --bg: #f7f8fa;
-  --text: #222;
-  --muted: #666;
-  --accent: #4f6bed;
+  --bg: #fdf8fc;
+  --text: #4a4458;
+  --muted: #8b8499;
+  --accent: #b8a4e8;
+  --accent-2: #f7b6d2;
   --card-bg: #fff;
 }
 
@@ -22,8 +23,9 @@ body {
 .header {
   text-align: center;
   padding: 80px 20px;
-  background: linear-gradient(135deg, var(--accent), #8a5cf6);
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: #fff;
+  text-shadow: 0 1px 4px rgba(120, 90, 160, 0.35);
 }
 
 .header h1 {
@@ -56,8 +58,8 @@ main {
 
 .cards {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   margin-top: 8px;
 }
@@ -95,7 +97,7 @@ main {
   text-align: center;
   color: var(--muted);
   font-size: 0.9rem;
-  border-top: 1px solid #e3e5ea;
+  border-top: 1px solid #efe3f1;
 }
 
 .fade-in {
